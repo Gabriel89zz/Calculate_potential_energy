@@ -4,7 +4,5 @@ PotentialEnergy ball = new PotentialEnergy();
 ball.Mass = 15.5;
 ball.Height = 50.3;
 
-double Ep = ball.CalculatePotentialEnergy();
-
-Console.WriteLine("The potential energy is: " + Ep + " joules");
+Console.WriteLine("The potential energy of the object with mass of: "+ball.Mass+ "kg and height of: "+ball.Height +"m it is: "+ ball.CalculatePotentialEnergy(ball)+" newtons");
 Console.ReadKey();

@@ -31,10 +31,10 @@ namespace Calculate_potential_energy
             height = 0;
         }
 
-        public double CalculatePotentialEnergy()
+        public double CalculatePotentialEnergy(PotentialEnergy ball)
         {
             double gravity = 9.8;
-            return mass * gravity * height;
+            return ball.mass * ball.height * gravity;
         }
     }
 }
